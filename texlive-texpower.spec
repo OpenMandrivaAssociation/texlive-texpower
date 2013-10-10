@@ -1,12 +1,12 @@
-# revision 15878
+# revision 29349
 # category Package
 # catalog-ctan /macros/latex/contrib/texpower
-# catalog-date 2007-01-16 09:34:54 +0100
+# catalog-date 2012-02-24 11:11:42 +0100
 # catalog-license gpl
 # catalog-version 0.2
 Name:		texlive-texpower
 Version:	0.2
-Release:	2
+Release:	3
 Summary:	Create dynamic online presentations with LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/texpower
@@ -118,16 +118,3 @@ another package such as pdfslide.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.2-2
-+ Revision: 756745
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.2-1
-+ Revision: 719710
-- texlive-texpower
-- texlive-texpower
-- texlive-texpower
-
