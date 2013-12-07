@@ -6,7 +6,7 @@
 # catalog-version 0.2
 Name:		texlive-texpower
 Version:	0.2
-Release:	3
+Release:	4
 Summary:	Create dynamic online presentations with LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/texpower
