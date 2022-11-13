@@ -1,19 +1,13 @@
-# revision 29349
-# category Package
-# catalog-ctan /macros/latex/contrib/texpower
-# catalog-date 2012-02-24 11:11:42 +0100
-# catalog-license gpl
-# catalog-version 0.2
 Name:		texlive-texpower
-Version:	0.2
-Release:	13
+Version:	29349
+Release:	1
 Summary:	Create dynamic online presentations with LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/texpower
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texpower.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texpower.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texpower.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texpower.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texpower.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texpower.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -31,12 +25,12 @@ class for preparing slides (such as foiltex or seminar) or
 another package such as pdfslide.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -111,7 +105,8 @@ another package such as pdfslide.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
