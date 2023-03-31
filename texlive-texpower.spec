@@ -1,6 +1,6 @@
 Name:		texlive-texpower
 Version:	29349
-Release:	1
+Release:	2
 Summary:	Create dynamic online presentations with LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/texpower
