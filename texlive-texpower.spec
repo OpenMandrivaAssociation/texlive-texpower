@@ -3,7 +3,7 @@ Version:	29349
 Release:	2
 Summary:	Create dynamic online presentations with LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/texpower
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/texpower
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texpower.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texpower.doc.r%{version}.tar.xz
